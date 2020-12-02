@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".newNoteActivity">
+
+    <EditText
+        android:id="@+id/tagET"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Category:"
+        android:inputType="textPersonName"
+        android:textColorHint="#030403"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <EditText
+        android:id="@+id/noteET"
+        android:layout_width="380dp"
+        android:layout_height="540dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Note:"
+        android:inputType="textMultiLine"
+        android:textColorHint="#020202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <Button
+        android:id="@+id/addNewNoteBtn"
+        android:layout_width="208dp"
+        android:layout_height="48dp"
+        android:background="@drawable/custom_button"
+        android:text="Add new note"
+        android:textColor="#B0F7C2"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteET" />
+</androidx.constraintlayout.widget.ConstraintLayout>
